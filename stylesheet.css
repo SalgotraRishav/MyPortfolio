@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #081b29;
+    color: #ededed;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 10%;
+    background:  #081b29;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+
+.logo{
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a{
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover{
+    color: #00abf0;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 0 10%;
+    padding: 0 10%;
+    margin-top: 20px;
+}
+
+.home-content{
+    max-width: 100%;
+     /* padding-top: 160px; */
+     padding: 30px 30px;
+     overflow-y: auto; 
+}
+
+.home-content h1{
+    font-size: 56px;
+    font-weight: 700;
+}
+
+.home-content h3{
+    font-size: 32px;
+    font-weight: 700;
+    color: #00abf0;
+}
+
+.home-content p{
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+
+.home-content .btn-box{
+    width: 345px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn-box a{
+    position: relative;
+    display: inline-flex;
+    font-size: 19px;
+    width: 150px;
+    height: 100%;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    color: #081b29;
+    font-weight: 600px;
+    border-radius: 8px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.home-sci{
+    width: 180px;
+    display: flex;
+    justify-content: center; /* Center the icons horizontally */
+    padding: 10px;
+    position: fixed;
+    left: 50%; /* Position the icons in the center of the page */
+    transform: translateX(-50%); /* Move the icons back to the left by half of their width */
+    bottom: 0;
+    width: 100%;
+    gap: 10px;
+    background: #081b29;
+}
+
+.home-sci a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: #081b29;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 20px;
+    color:#00abf0;
+    font-size: 20px;
+    color: #00abf0;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.home-sci a:hover{
+    color:#081b29;
+}
+
+.home-sci a::before{
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    width: 0;
+    height: 100%;
+    background: #00abf0;
+    z-index: -1;
+    transition: .5s;
+}
+
+.home-sci a:hover::before{
+    width: 100%;
+}
+
+.footer{
+    padding: 10px;
+    margin-top: auto;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;    
+}
+
+.list{
+    margin: 15px;
+}
+
+form {
+    max-width: 400px;
+    margin-top: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+textarea,
+input[type="text"],
+input[type="email"],
+input[type="submit"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.list{
+    margin-top: -5px;
+}
+
+#successMessage {
+    display: none;
+    margin-top: 10px;
+    text-align: left;
+}

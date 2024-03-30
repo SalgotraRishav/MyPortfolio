@@ -1,0 +1,116 @@
+<html>
+<head>
+<html>
+<head>
+	<title>Rishav Salgotra</title>
+	<script src="Foundation/foundation.js"></script>
+	<script src="Dynamic_Projects/dynamicProjects.js"></script>
+	<script src="Form_Enhancement/formEnhancement.js"></script>
+	<link rel="stylesheet" href="stylesheet.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body onload="init()">
+	<header class="header">
+		<a href="#" id="myLink" class="logo"></a>
+
+		<nav class="navbar">
+			<a href="#" onclick="updateText('1')">Home</a>
+			<a href="#" onclick="updateText('2')">About Me</a>
+			<a href="#" onclick="updateText('3')">Skills</a>
+			<a href="#" onclick="updateText('4')">Work Experience</a>
+			<a href="#" onclick="updateText('5')">Contact</a>
+			<a href="calc.html" onclick="updateText('6')">Project</a>
+		</nav>
+	</header>
+
+	<section class="home">
+		<div class="home-content">
+			<h1>Hi, I'm Rishav Salgotra</h1>
+
+			<h3 id="title"></h3>
+			
+			<div id="pData1">
+				<p>
+					I'm a second semester student of "Computer Software and Database Development" in Loyalist College in Toronto. Please click on the above navigation keys for more information abaout me. Below are the social media handles of me. Thank you!
+				</p>
+			</div>
+
+			<div id="pData2" style="display: none;">
+				<p>
+					I'm an international student in Canada with a master’s degree in computer applications. <br><br>I have four years of experience as a software engineer. <br><br>Currently, I'm working part-time as a security guard and have previous experience working at Best Buy. I'm looking for a co-op opportunity where I can apply my skills and learn in a professional setting.
+				</p>
+			</div>
+			
+			<div id="pData3" style="display: none;">
+				<ul class="list">
+					<li><strong>Technical skills:</strong> Object Oriented Programming, Core Java, HTML, CSS, JavaScript, and MySQL.</li><br>
+					<li><strong>Key Skills: </strong>POS machines, technical sales, customer support, customer service, problem solving.</li><br>
+					<li><strong></string>Core Skills:</strong> Teamwork, Customer Focus, Merchandising, Operational Efficiency, communication, organization skills and resilience.</li><br>
+					<li><strong></string>Applications / tools:</strong> MS Office, Eclipse, GitHub, and TFS (Team Foundation Server).</li><br>
+					<li><strong></string>Hard skills: </strong>High availability skills, Windows, MS Office, and Cisco Packet Tracer.</li><br>
+			
+				</ul>
+			</div>
+
+			<div id="pData4" style="display: none;">
+				<h4>Systems Engineer (03/2022-07/2023)</h4>
+				<label>Tata Consultance Services, India.<br>Roles and Responsibilities</label>
+
+				<ul class="list" id="list">
+					<li>Monitoring the application using Splunk tool.</li>
+					<li>Traffic routing using Akamai, F5 tools.</li>
+					<li>Creating and managing incidents using Service Now.</li>
+				</ul>
+
+				<br>
+
+				<h4>Software Engineer (04/2019-03/2022)</h4>
+				<label>Fiserv, India.<br>Roles and Responsibilities</label>
+
+				<ul class="list" id="list">
+					<li>Creating and managing incidents using Service Now.</li>
+					<li>Design and develop modules as per documented requirements.</li>
+					<li>Bugs fixing and enhancements of the projects.</li>
+					<li>Performing UI changes into the product.</li>
+					<li>Creating test plans and performing unit testing and component testing.</li>
+					<li>Code check-in, check-out using Team Foundation Server (TFS).</li>
+				</ul>
+			</div>
+
+			<div id="pData5" style="display: none;">
+				<form id="myForm" onsubmit="return validateForm()">
+					<label>Name: </label>
+					<input type="text" id="name">
+					<br>
+				
+					<label>Email: </label>
+					<input type="email" id="email">
+					<br>
+					
+					<label id = "remChars">Message:</label>
+					<input type="text" id="message" oninput="limitCharacters()" >
+					<br>
+					<input type="submit">
+				</form>
+				
+				<div id="successMessage" style="display: none; margin-top: 10px;">
+					Form submitted successfully!
+				</div>
+				
+			</div>			
+			
+		</div>
+
+	</section>
+
+	<footer class="home-sci">
+		<a href="https://www.linkedin.com/in/rsalgotr94/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+		<a href="https://www.instagram.com/rsalgotr4" target="_blank"><i class='bx bxl-instagram'></i></a>
+		<a href="https://www.facebook.com/rsalgotr4" target="_blank"><i class='bx bxl-facebook'></i></a>
+		<a href="https://www.twitter.com/rsalgotr4"  target="_blank"><i class='bx bxl-twitter'></i></a>
+	</footer>
+
+</body>
+
+</html>
